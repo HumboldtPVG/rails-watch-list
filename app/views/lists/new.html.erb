@@ -3,7 +3,6 @@
     <h2>Make a New List</h2>
     <%= simple_form_for [@bookmark, @list] do |f| %>
       <%= f.input :name %>
-      <%= f.association :movies %>
       <%= f.submit class: 'btn btn-primary'%>
     <% end %>
     <%= link_to 'Back to Lists', lists_path %>

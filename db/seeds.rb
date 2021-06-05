@@ -1,5 +1,6 @@
 require 'json'
 require 'open-uri'
+List.destroy_all
 
 Movie.destroy_all
 
@@ -14,11 +15,3 @@ results.take(25).each do |movie|
   puts "created a movie: #{m.title}!"
 end
 
-# List.destroy_all
-
-# puts 'creating list names'
-# 5.times do
-#   lists = List.create!(
-#     name: Faker::Hipster.word
-#     )
-# end

@@ -1,10 +1,10 @@
 <body>
   <div class="banner">
-      <h1> Movie Lists</h1>
+      <h1 class="twister"> Movie Lists</h1>
       <%= link_to "Add a new list!", new_list_path(@path), class: "btn btn-primary" %>
   </div>
 
-  <div class="main-container">
+  <div class="container">
       <div class="cards">
         <% @lists.each do |list| %>
           <div class="card">
